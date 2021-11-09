@@ -6,7 +6,7 @@ public class PercolationUF implements IPercolate{
    private final int VTOP;
    private final int VBOTTOM;
    private int myOpenCount;
-   PercolationUF(IUnionFind finder, int size ){
+   public PercolationUF(IUnionFind finder, int size ){
        finder.initialize(size * size + 2);
        myFinder = finder;
        VTOP = size * size;
