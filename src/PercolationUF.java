@@ -62,6 +62,6 @@ public class PercolationUF implements IPercolate{
     public int numberOfOpenSites() {
         return myOpenCount;
     }
-    public int getIndex(int row, int col){return row*myGrid.length + col; }
+    private int getIndex(int row, int col){return row*myGrid.length + col; }
 
 }
