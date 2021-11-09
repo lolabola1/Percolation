@@ -12,6 +12,6 @@ public class PercolationDFSFast extends PercolationDFS{
     if (row == 0){dfs(row,col);}
     if (row != 0 && isFull(row - 1, col)){dfs(row,col);}
     if (col != 0 && isFull(row, col - 1) ){dfs(row,col);}
-    if (col != 9 && isFull(row, col + 1) ){dfs(row,col);}
+    if (col < myGrid.length && isFull(row, col + 1) ){dfs(row,col);}
     }
 }
